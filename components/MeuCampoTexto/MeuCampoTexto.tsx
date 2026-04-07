@@ -3,13 +3,13 @@ import {View, StyleSheet ,TextInput, Text, TextStyle, StyleProp } from "react-na
 type MeuCampoTextoProps = {
     label:string
     placeholder: string
-    style:StyleProp<TextStyle>;
+    style?:StyleProp<TextStyle>;
 };
 
 const MeuCampoTexto = ({placeholder, label, style}: MeuCampoTextoProps) => {
     return(
         <View >
-            <Text style = {[estilo.Text , style]}>{label}</Text>
+            <Text style = {[estilo.Text, style]}>{label}</Text>
             <TextInput
             placeholder ={placeholder}
             />

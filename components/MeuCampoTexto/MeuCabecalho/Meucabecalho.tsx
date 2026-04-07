@@ -1,7 +1,8 @@
-import { Image, StyleSheet, View } from "react-native"
+import { Image, StyleProp, StyleSheet, TextStyle, View } from "react-native"
 
 type MeuCabecalhoProps = {
     img: string
+    
 }
 
 
@@ -17,8 +18,12 @@ const MeuCabelho = ({img}: MeuCabecalhoProps) => {
 const estilo = StyleSheet.create({
 
     Imagem: {
-        width: 100,
-        height:100,
+        width: 120,
+        height:120,
+        backgroundColor:"black",
+        justifyContent:"center",
+        alignItems:"baseline"
+
         
     },
     container:{
