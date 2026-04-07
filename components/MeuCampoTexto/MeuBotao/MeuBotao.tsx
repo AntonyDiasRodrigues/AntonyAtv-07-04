@@ -1,12 +1,13 @@
-import {Button, StyleSheet } from "react-native"
+import {Button, StyleProp, StyleSheet, TextStyle } from "react-native"
 
 type MeuBotaoProps = {
     title: string
+    style?:StyleProp<TextStyle>;
 }
 
-const Botao = ({title}: MeuBotaoProps) =>{
+const Botao = ({title, style}: MeuBotaoProps) =>{
     return(
-        <Button  title={title} onPress={() => alert ("Clicado")} />
+        <Button title={title}   onPress={() => alert ("Clicado")}  />
         
     )
 }
@@ -15,6 +16,7 @@ const Botao = ({title}: MeuBotaoProps) =>{
 const estilo = StyleSheet.create({
     button: {
         backgroundColor: "cian"
+        
 
     }
 })
